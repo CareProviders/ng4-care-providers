@@ -1,6 +1,6 @@
 import { Http } from '@angular/http';
 import { NgModule } from '@angular/core';
-import { APP_CONSTANTS } from '../../app.constants';
+import { APP_CONSTANTS } from '../../../app.constants';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
