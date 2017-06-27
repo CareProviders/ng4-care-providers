@@ -1,3 +1,6 @@
+/**
+ * @author: Shoukath Mohammed
+ */
 export interface Profile {
     imagePath: string;
     fname: string;
