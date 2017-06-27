@@ -10,21 +10,21 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
-  TranslateModule.forRoot({
-          loader: {
-              provide: TranslateLoader,
-              useFactory: createTranslateLoader,
-              deps: [Http]
-          }
-      })
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [Http]
+      }
+    })
   ],
   exports: [TranslateModule]
 })
-
 export class I18nModule {}
 
 export function createTranslateLoader(http: Http) {
-    return new TranslateHttpLoader(http
-    , APP_CONSTANTS.paths.I18N_PATH
-    , APP_CONSTANTS.formats.I18N_FILE_FORMAT);
+  return new TranslateHttpLoader(http
+  , APP_CONSTANTS.paths.I18N_PATH
+  , APP_CONSTANTS.formats.I18N_FILE_FORMAT
+  );
 }

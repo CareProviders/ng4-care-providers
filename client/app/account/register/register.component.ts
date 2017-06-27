@@ -1,6 +1,9 @@
 import { WizardComponent, MovingDirection } from 'ng2-archwizard';
 import { Component, OnInit, Inject, ViewEncapsulation, ViewChild } from '@angular/core';
 
+/**
+ * @author: Shoukath Mohammed
+ */
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,7 +11,6 @@ import { Component, OnInit, Inject, ViewEncapsulation, ViewChild } from '@angula
   encapsulation: ViewEncapsulation.None
 })
 export class RegisterComponent implements OnInit {
-  private imagePath: any = '';
   private states: String[] = [];
   private accountType: String = '';
   private accounts: Array<any> = [];
@@ -20,15 +22,6 @@ export class RegisterComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.states = [
-      'Alaska',
-      'Alabama',
-      'Indiana',
-      'Illinois',
-      'Ohio',
-      'New York'
-    ];
-
     this.accounts = [{
       title: 'Care Seeker',
       value: 'CS',
@@ -41,22 +34,10 @@ export class RegisterComponent implements OnInit {
       fieldName: 'careProvider',
       classNames: 'fa-hand-peace-o'
     }];
-    debugger;
-    console.log(this.wizard);
   }
 
   onAccountSelect(ca: Object): void {
     this.activeAccount = ca;
-  }
-
-  onFileInput(e: any): void {
-    const r = new FileReader();
-    const file = e.target.files[0];
-
-    r.onload = (ev: any) => {
-      this.imagePath = ev.target.result;
-    };
-    r.readAsDataURL(file);
   }
 
   onAccountChange(ca: any): void {

@@ -15,12 +15,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
+import { PaymentComponent } from './shared/components/payment/payment.component';
+import { ProfileComponent } from './shared/components/profile/profile.component';
 
 // import directives/pipes here
 
 // import constants here
 import { APP_ROUTES } from './app.routes';
-import { PaymentComponent } from './shared/components/payment/payment.component';
 
 /**
  * @author: Shoukath Mohammed
@@ -32,7 +33,8 @@ import { PaymentComponent } from './shared/components/payment/payment.component'
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    PaymentComponent
+    PaymentComponent,
+    ProfileComponent
   ],
   imports: [
     I18nModule,
