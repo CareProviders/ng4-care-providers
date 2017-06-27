@@ -8,8 +8,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
   @Input() profileInfo: Profile;
+  private imagePath: any = '';
 
   constructor() {}
 
   ngOnInit() {}
+
+  onFileInput(e: Event): void {
+    const r = new FileReader();
+    const file = (<HTMLInputElement>e.target).files[0];
+
+    r.onload = (ev: any) => {
+      this.imagePath = ev.target.result;
+    };
+    r.readAsDataURL(file);
+  }
 }
