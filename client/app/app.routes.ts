@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './account/register/register.component';
+import { PaymentComponent } from './shared/components/payment/payment.component';
 
 /**
  * @author: Shoukath Mohammed
@@ -9,7 +10,7 @@ import { RegisterComponent } from './account/register/register.component';
 export const APP_ROUTES: Routes = [
     {
         path: '',
-        redirectTo: '/register',
+        redirectTo: '/payment',
         pathMatch: 'full'
     }, {
         path: 'home',
@@ -17,6 +18,9 @@ export const APP_ROUTES: Routes = [
     }, {
         path: 'register',
         component: RegisterComponent
+    }, {
+        path: 'payment',
+        component: PaymentComponent
     }
 ];
 

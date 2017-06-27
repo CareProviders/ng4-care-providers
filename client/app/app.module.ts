@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { WizardModule } from 'ng2-archwizard';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { I18nModule } from './shared/i18n/i18n.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialDesigModule } from './shared/material-design/material-design.module';
+import { I18nModule } from './shared/modules/i18n/i18n.module';
+import { MaterialDesigModule } from './shared/modules/material-design/material-design.module';
 
 // import components here
 import { AppComponent } from './app.component';
@@ -20,6 +20,7 @@ import { RegisterComponent } from './account/register/register.component';
 
 // import constants here
 import { APP_ROUTES } from './app.routes';
+import { PaymentComponent } from './shared/components/payment/payment.component';
 
 /**
  * @author: Shoukath Mohammed
@@ -30,7 +31,8 @@ import { APP_ROUTES } from './app.routes';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PaymentComponent
   ],
   imports: [
     I18nModule,

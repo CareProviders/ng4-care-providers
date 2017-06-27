@@ -67,7 +67,7 @@
                             <div class="panel-body">
                                 <div class="form-group">
                                     <div class="row justify-content-center">
-                                        <div class="col-md-4 col sm-4 col lg-4 text-center">
+                                        <div class="col-md-12 col-sm-12 col-lg-12 col-12 text-center">
                                             <div class="cp-wiz-image-wrapper">
                                                 <div class="cp-wiz-image">
                                                     <img [src]="(imagePath) ? imagePath : '//placehold.it/200'" class="rounded-circle" height="200" width="200" />
@@ -172,8 +172,52 @@
                     </wizard-step>
                     <wizard-step navigationSymbol="3">
                         <div class="panel panel-default text-left cp-panel-full">
-                            <div class="panel-heading">Payment Setup</div>
-                            <div class="panel-body"></div>
+                            <div class="panel-heading">Account Setup</div>
+                            <div class="panel-body">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <md-input-container class="example-full-width">
+                                                <input type="email" mdInput placeholder="Email Address">
+                                            </md-input-container>
+                                        </div>
+                                        <div class="form-group">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput type="password" placeholder="Password">
+                                            </md-input-container>
+                                        </div>
+                                        <div class="form-group">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput type="password" placeholder="Confirm Password">
+                                            </md-input-container>
+                                        </div>
+                                        <div class="form-group">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput type="tel" placeholder="Contact Number">
+                                            </md-input-container>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput placeholder="Email Address">
+                                            </md-input-container>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput type="password" placeholder="Password">
+                                            </md-input-container>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput type="password" placeholder="Confirm Password">
+                                            </md-input-container>
+                                        </div>
+                                    </div>
+                                </div>-->
+                            </div>
                             <div class="panel-footer">
                                 <div class="row justify-content-between">
                                     <div class="col-6 col-sm-6 col-md-2 col-lg-2">
@@ -195,6 +239,55 @@
                         </div>
                     </wizard-step>
                     <wizard-step navigationSymbol="4">
+                        <div class="panel panel-default text-left cp-panel-full">
+                            <div class="panel-heading">Payment Setup</div>
+                            <div class="panel-body">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <md-input-container class="example-full-width">
+                                                <input type="email" mdInput placeholder="Email Address">
+                                            </md-input-container>
+                                        </div>
+                                        <div class="form-group">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput type="password" placeholder="Password">
+                                            </md-input-container>
+                                        </div>
+                                        <div class="form-group">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput type="password" placeholder="Confirm Password">
+                                            </md-input-container>
+                                        </div>
+                                        <div class="form-group">
+                                            <md-input-container class="example-full-width">
+                                                <input mdInput type="tel" placeholder="Contact Number">
+                                            </md-input-container>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row justify-content-between">
+                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+                                        <div class="cp-btn-circle-wrapper">
+                                            <a md-fab routerLink="." previousStep class="cp-btn-circle-default pull-left">
+                                                <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+                                        <div class="cp-btn-circle-wrapper">
+                                            <a md-fab routerLink="." nextStep class="cp-btn-circle-default pull-right">
+                                                <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </wizard-step>
+                    <wizard-step navigationSymbol="5">
                         <div class="panel panel-default text-left cp-panel-full">
                             <div class="panel-heading">Done</div>
                             <div class="panel-body"></div>
