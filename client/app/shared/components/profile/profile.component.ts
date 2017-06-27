@@ -1,6 +1,10 @@
 import { Profile } from './profile.model';
 import { Component, OnInit, Input } from '@angular/core';
+import { STATES, GENDER } from '../../constants/shared.constants';
 
+/**
+ * @author: Shoukath Mohammed
+ */
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -9,6 +13,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProfileComponent implements OnInit {
   @Input() profileInfo: Profile;
   private imagePath: any = '';
+  private states: Array<Object> = STATES;
+  private gender: Array<Object> = GENDER;
 
   constructor() {}
 

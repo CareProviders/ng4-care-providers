@@ -43,7 +43,7 @@
     </div>
     <div class="col-md-6">
       <md-select placeholder="Gender">
-        <md-option *ngFor="let state of states" [value]="state">{{ state }}</md-option>
+        <md-option *ngFor="let g of gender" [value]="g.value">{{ g.name }}</md-option>
       </md-select>
     </div>
   </div>
@@ -71,7 +71,7 @@
     </div>
     <div class="col-md-4">
       <md-select placeholder="State">
-        <md-option *ngFor="let state of states" [value]="state">{{ state }}</md-option>
+        <md-option *ngFor="let state of states" [value]="state.value">{{ state.name }}</md-option>
       </md-select>
     </div>
     <div class="col-md-4">
