@@ -11,7 +11,6 @@ import { Component, OnInit, Inject, ViewEncapsulation, ViewChild } from '@angula
   encapsulation: ViewEncapsulation.None
 })
 export class RegisterComponent implements OnInit {
-  private states: String[] = [];
   private accountType: String = '';
   private accounts: Array<any> = [];
   private activeAccount: Object = {};
