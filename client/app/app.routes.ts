@@ -10,7 +10,7 @@ import { PaymentComponent } from './shared/components/payment/payment.component'
 export const APP_ROUTES: Routes = [
     {
         path: '',
-        redirectTo: '/payment',
+        redirectTo: '/register',
         pathMatch: 'full'
     }, {
         path: 'home',

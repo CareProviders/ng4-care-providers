@@ -35,6 +35,16 @@ export class RegisterComponent implements OnInit {
     }];
   }
 
+  onEnter(e): boolean {
+    console.log(e);
+    return true;
+  }
+
+  onExit(e): boolean {
+    console.log(e);
+    return true;
+  }
+
   onAccountSelect(ca: Object): void {
     this.activeAccount = ca;
   }
