@@ -40,24 +40,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--<div class="form-group" *ngIf="accountType == 'CS'" class="alert alert-info">
-                                    <p>Care Seeker - Your family's well-being is your top priority. That's why we offer tools and resources to help you evaluate risk and stay savvy about safety.</p>
-                                </div>
-                                <div class="form-group" *ngIf="accountType == 'CP'" class="alert alert-info">
-                                    <p>Care Provider - Your family's well-being is your top priority. That's why we offer tools and resources to help you evaluate risk and stay savvy about safety.</p>
-                                </div>-->
                             </div>
                             <div class="panel-footer">
-                                <div class="row">
-                                    <div class="col-md-10"></div>
-                                    <div class="col-md-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." nextStep class="cp-btn-circle-default pull-right">
-                                                <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-wizard-footer [btnRight]="true"></app-wizard-footer>
                             </div>
                         </div>
                     </wizard-step>
@@ -68,22 +53,7 @@
                                 <app-profile></app-profile>
                             </div>
                             <div class="panel-footer">
-                                <div class="row justify-content-between">
-                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." previousStep class="cp-btn-circle-default pull-left">
-                                                <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." nextStep class="cp-btn-circle-default pull-right">
-                                                <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-wizard-footer [btnLeft]="true" [btnRight]="true"></app-wizard-footer>
                             </div>
                         </div>
                     </wizard-step>
@@ -91,48 +61,10 @@
                         <div class="panel panel-default text-left cp-panel-full">
                             <div class="panel-heading">Account Setup</div>
                             <div class="panel-body">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-6 col-sm-12 col-lg-6 col-12">
-                                        <div class="form-group">
-                                            <md-input-container class="example-full-width">
-                                                <input type="email" mdInput placeholder="Email Address">
-                                            </md-input-container>
-                                        </div>
-                                        <div class="form-group">
-                                            <md-input-container class="example-full-width">
-                                                <input mdInput type="password" placeholder="Password">
-                                            </md-input-container>
-                                        </div>
-                                        <div class="form-group">
-                                            <md-input-container class="example-full-width">
-                                                <input mdInput type="password" placeholder="Confirm Password">
-                                            </md-input-container>
-                                        </div>
-                                        <div class="form-group">
-                                            <md-input-container class="example-full-width">
-                                                <input mdInput type="tel" placeholder="Contact Number">
-                                            </md-input-container>
-                                        </div>
-                                    </div>
-                                </div>
+                               <app-account-setup></app-account-setup> 
                             </div>
                             <div class="panel-footer">
-                                <div class="row justify-content-between">
-                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." previousStep class="cp-btn-circle-default pull-left">
-                                                <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." nextStep class="cp-btn-circle-default pull-right">
-                                                <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-wizard-footer [btnLeft]="true" [btnRight]="true"></app-wizard-footer>
                             </div>
                         </div>
                     </wizard-step>
@@ -166,22 +98,7 @@
                                 </div>
                             </div>
                             <div class="panel-footer">
-                                <div class="row justify-content-between">
-                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." previousStep class="cp-btn-circle-default pull-left">
-                                                <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." nextStep class="cp-btn-circle-default pull-right">
-                                                <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-wizard-footer [btnLeft]="true" [btnRight]="true"></app-wizard-footer>
                             </div>
                         </div>
                     </wizard-step>
@@ -190,31 +107,10 @@
                             <div class="panel-heading">Done</div>
                             <div class="panel-body"></div>
                             <div class="panel-footer">
-                                <div class="row justify-content-between">
-                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." previousStep class="cp-btn-circle-default pull-left">
-                                                <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-                                        <div class="cp-btn-circle-wrapper">
-                                            <a md-fab routerLink="." nextStep class="cp-btn-circle-default pull-right">
-                                                <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-wizard-footer [btnLeft]="true" [btnRight]="true"></app-wizard-footer>
                             </div>
                         </div>
                     </wizard-step>
-
-                    <!--<wizard-step navigationSymbol="2">-->
-                    <!--Content of Step 3
-                        <button type="button" previousStep>Previous Step</button>
-                        <button type="button" (click)="finishFunction()">Finish</button>-->
-                    <!--</wizard-step>-->
                 </div>
             </wizard>
         </div>
