@@ -34,7 +34,7 @@
     "@ngx-translate/core": "^7.1.0",
     "@ngx-translate/http-loader": "0.1.0",
     "@types/jquery": "^3.2.2",
-    "@types/lodash": "^4.14.64",
+    "@types/lodash": "^4.14.71",
     "body-parser": "^1.15.2",
     "bootstrap": "^4.0.0-alpha.6",
     "cookie-parser": "^1.4.3",
