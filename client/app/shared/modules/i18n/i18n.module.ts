@@ -1,7 +1,7 @@
-import { Http } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { APP_CONSTANTS } from '../../../app.constants';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 /**
@@ -14,15 +14,16 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
       loader: {
         provide: TranslateLoader,
         useFactory: createTranslateLoader,
-        deps: [Http]
+        deps: [HttpClient]
       }
-    })
+    }),
+    HttpClientModule
   ],
   exports: [TranslateModule]
 })
 export class I18nModule {}
 
-export function createTranslateLoader(http: Http) {
+export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http
   , APP_CONSTANTS.paths.I18N_PATH
   , APP_CONSTANTS.formats.I18N_FILE_FORMAT
