@@ -27,13 +27,13 @@
     "@angular/compiler": "^5.1.0",
     "@angular/core": "^5.1.0",
     "@angular/forms": "^5.1.0",
-    "@angular/http": "^4.3.5",
+    "@angular/http": "^5.1.0",
     "@angular/material": "^5.0.1",
-    "@angular/platform-browser": "^4.3.5",
-    "@angular/platform-browser-dynamic": "^4.3.5",
+    "@angular/platform-browser": "^5.1.0",
+    "@angular/platform-browser-dynamic": "^5.1.0",
     "@angular/router": "^4.3.5",
     "@ngx-translate/core": "^8.0.0",
-    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.4",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.7",
     "@ngx-translate/core": "^7.2.0",
     "@ngx-translate/http-loader": "1.1.0",
     "@types/jquery": "^3.2.12",
@@ -63,7 +63,7 @@
     "@angular/compiler-cli": "^4.3.5",
     "@types/jasmine": "2.6.0",
     "@types/node": "~8.0.26",
-    "codelyzer": "~3.2.0",
+    "codelyzer": "~4.0.0",
     "concurrently": "^3.4.0",
     "iron-node": "^3.0.20",
     "jasmine-core": "~2.8.0",
@@ -81,6 +81,6 @@
     "rimraf": "^2.6.1",
     "ts-node": "^4.0.0",
     "tslint": "~5.7.0",
-    "typescript": "^2.2.2"
+    "typescript": "^2.6.2"
   }
 }
