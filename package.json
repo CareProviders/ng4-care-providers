@@ -41,7 +41,7 @@
     "body-parser": "^1.15.2",
     "bootstrap": "^4.0.0-alpha.6",
     "cookie-parser": "^1.4.3",
-    "core-js": "^2.5.0",
+    "core-js": "^2.5.2",
     "credit-card-type": "^5.0.4",
     "debug": "^3.0.1",
     "express": "^4.14.0",
