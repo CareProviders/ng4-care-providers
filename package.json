@@ -53,7 +53,7 @@
     "mongoose": "^4.13.6",
     "ng2-archwizard": "^2.1.0",
     "popper.js": "^1.12.5",
-    "rxjs": "^5.4.3",
+    "rxjs": "^5.5.1",
     "tether": "^1.4.0",
     "typescript-rest": "^1.2.0",
     "zone.js": "^0.8.17"
