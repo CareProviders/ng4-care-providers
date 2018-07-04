@@ -76,7 +76,7 @@
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^1.0.0",
     "nodemon": "^1.14.11",
-    "pm2": "^2.9.3",
+    "pm2": "^3.0.0",
     "protractor": "~5.3.0",
     "rimraf": "^2.6.1",
     "ts-node": "^6.0.0",
