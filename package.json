@@ -64,7 +64,7 @@
     "@types/jasmine": "2.8.7",
     "@types/node": "~10.5.3",
     "codelyzer": "~4.1.0",
-    "concurrently": "^3.4.0",
+    "concurrently": "^4.0.0",
     "iron-node": "^3.0.20",
     "jasmine-core": "~3.1.0",
     "jasmine-spec-reporter": "~4.2.1",
