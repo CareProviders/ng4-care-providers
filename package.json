@@ -66,7 +66,7 @@
     "codelyzer": "~4.1.0",
     "concurrently": "^4.0.0",
     "iron-node": "^3.0.20",
-    "jasmine-core": "~3.1.0",
+    "jasmine-core": "~3.2.0",
     "jasmine-spec-reporter": "~4.2.1",
     "jasmine-ts": "^0.2.1",
     "karma": "~2.0.0",
