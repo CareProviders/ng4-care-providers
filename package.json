@@ -39,7 +39,7 @@
     "@types/jquery": "^3.3.0",
     "@types/lodash": "^4.14.100",
     "body-parser": "^1.18.1",
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "^4.3.1",
     "cookie-parser": "^1.4.3",
     "core-js": "^2.5.2",
     "credit-card-type": "^6.0.0",
