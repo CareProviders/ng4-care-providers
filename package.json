@@ -48,7 +48,7 @@
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "jquery": "^3.2.1",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.15",
     "mongojs": "^2.4.1",
     "mongoose": "^5.0.1",
     "ng2-archwizard": "^2.1.0",
