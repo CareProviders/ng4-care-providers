@@ -55,7 +55,7 @@
     "popper.js": "^1.12.5",
     "rxjs": "^5.5.6",
     "tether": "^1.4.0",
-    "typescript-rest": "^1.2.2",
+    "typescript-rest": "^2.2.1",
     "zone.js": "^0.8.17"
   },
   "devDependencies": {
