@@ -62,7 +62,7 @@
     "@angular/cli": "1.6.4",
     "@angular/compiler-cli": "^5.0.0",
     "@types/jasmine": "2.8.7",
-    "@types/node": "~10.7.0",
+    "@types/node": "~12.7.10",
     "codelyzer": "~4.1.0",
     "concurrently": "^4.0.0",
     "iron-node": "^3.0.20",
